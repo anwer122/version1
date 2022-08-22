@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="i1" placeholder="enter first" >
+    <input type="text" id="silu" placeholder="enter scnd">
+    <input type="text" id="total">
+    <p id="num"></p>
+
+
+
+
+
+    <input type="text" name="" id="nm" placeholder="name">
+    <input type="text" name="" id="ps" placeholder="password">
+    <button onclick="sub()">sumbmit</button> <br>
+    <span id="sp"></span>
+    <span id="sp1"></span>
+    <button onclick="add()">add</button>
+    <p id="soman" onclick="fun()" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum itaque praesentium maiores
+        quidem ratione corrupti consectetur reiciendis sequi provident exercitationem, ex ullam accusantium porro
+        officiis corporis odio, nulla dicta!</p>
+        <img src="{%static 'image/th.jpg'%}" alt="" srcset="" onclick="img1()" id="img2">
+    <script>
+    console.log(document.getElementById('i1').id)
+    console.log(document.getElementById('soman'))
+    document.getElementById('soman').style.color="red" 
+    function fun(){
+        document.getElementById('soman').style.color="red"
+        document.getElementById('soman').innerHTML='hellow'
+    }
+    function add(){
+        a=Number(document.getElementById('i1').value)
+        b=Number( document.getElementById('silu').value)
+    console.log(a,b)
+    c=a+b
+    console.log(c)
+    document.getElementById('total').value=c
+    document.getElementById('num').innerHTML=c
+    }
+    function sub(){
+        a=document.getElementById('nm').value
+        b=document.getElementById('ps').value
+        
+        document.getElementById('sp').innerHTML=a
+        document.getElementById('sp1').innerHTML=b
+    }
+function img1(){
+    document.getElementById('img2').src="{% static 'image/a.jpg'%}"
+
+}
+
+    </script>
+</body>
+
+</html>

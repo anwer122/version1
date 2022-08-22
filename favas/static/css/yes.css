@@ -1,0 +1,40 @@
+h1{
+    color: blue;
+
+}
+#lm{
+    color: red;
+}
+.la{
+    color: yellowgreen;
+}
+*{
+    background-color:cornsilk ;
+}
+/* p,h1,h2,h3,h4,h6{
+    color: hotpink
+    ;
+}
+p span{
+    color:yellowgreen ;
+} */
+
+input[type=text]{
+    color:brown ;
+}
+a[class="new"]{
+    color: yellow;
+    background-color: azure;
+}
+span{
+    color:tan ;
+    background-color: cornsilk;
+}
+div {
+    color: darkblue;
+}
+div span{
+    color: inherit;
+    background-color:inherit ;
+    font-size: 35px;
+}
